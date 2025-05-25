@@ -46,10 +46,10 @@
 
 ```bash
 # 轉換指定目錄中的所有 PPTX 檔案
-python ppt_cn2tw.py ./input
+python3 ppt_cn2tw.py ./input
 
 # 指定輸出目錄
-python ppt_cn2tw.py ./out -o ./output
+python3 ppt_cn2tw.py ./out -o ./output
 ```
 
 ### 參數說明

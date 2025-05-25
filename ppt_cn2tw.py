@@ -20,8 +20,9 @@ from opencc import OpenCC
 
 class PPTConverter:
     def __init__(self):
-        # 初始化簡轉繁轉換器
-        self.cc = OpenCC('s2t')
+        # 初始化簡轉繁轉換器，使用 s2twp 轉換為台灣習慣用字
+        # s2twp: 簡體中文 → 繁體中文（台灣用語轉換）
+        self.cc = OpenCC('s2twp')
     
     def convert_text(self, text: Optional[str]) -> Optional[str]:
         """將簡體中文轉換為繁體中文"""
